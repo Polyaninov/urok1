@@ -21,7 +21,7 @@
     9. В директории text_proxessing создать файл logs.log с содержимым
 
      touch logs.log
-     pmn@pmn-ubuntu:~/text_processing$ nano logs.log 
+     nano logs.log 
 
      Часть 2: Пользователи и права доступа
      
@@ -36,7 +36,9 @@
   sudo useradd user_3
   sudo useradd user_4
   sudo useradd user_4
-  cat  /etc/passwd | grep user_'*'
+  
+
+  
     
     3.Пользователей user_1 и user_2 добавить в группу workers
 
@@ -55,7 +57,9 @@
 
 
     
-    6.Вывести на экран состав групп workers; teachers; students
+    6.Вывести на экран состав групп workers; teachers; students?????
+    
+    
     7.Задать пароли для всех пользователей
 
      sudo passwd user_1   1234567
@@ -67,7 +71,16 @@
 
      
     8.С помощью grep найти записи о новых группах и пользователях в файлах /etc/passwd и /etc/group
+
+
+    
     9.Создать директорию user в домашней директории. В ней создать каталоги library и tests.
+    
+     mkdir user
+     mkdir library 
+     pmn@pmn-ubuntu:~/user$ mkdir tests
+
+    
     10.Создать файлы book_фамилия_{1,2,3,4,5} и поместить их в library
     Создать текстовый файл test_permissions, и поместить в tests; добавить в него следующий текст
 

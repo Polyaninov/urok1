@@ -8,3 +8,5 @@
   mkdir text_processing 
     
     3. В директории text_processing создать файл syslog с содержимым
+    touch syslog
+    nano syslog 

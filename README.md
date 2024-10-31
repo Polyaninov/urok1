@@ -82,7 +82,14 @@
 
     
     10.Создать файлы book_фамилия_{1,2,3,4,5} и поместить их в library
+    
+    pmn@pmn-ubuntu:~/user/library$ for i in {1..5}; do touch book_фамилия_$i; done
+
+    
     Создать текстовый файл test_permissions, и поместить в tests; добавить в него следующий текст
+
+
+    
 
 
 

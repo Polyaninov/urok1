@@ -30,17 +30,31 @@
     sudo groupadd students sudo groupadd teachers sudo groupadd workers
 
     2.Создать пользователей user_{1,2,3,4,5}; вывести из файла /etc/passwd только имена созданных пользователей
+    
   sudo useradd user_1
   sudo useradd user_2
   sudo useradd user_3
   sudo useradd user_4
   sudo useradd user_4
+  cat  /etc/passwd | grep user_'*'
+    
+    3.Пользователей user_1 и user_2 добавить в группу workers
+
+    sudo usermod -a -G workers user_1
+    sudo usermod -a -G workers user_2
+
+    4.Пользователей user_3, user_4, user_5 добавить в группу students
+    
+ sudo usermod -a -G students user_3
+ sudo usermod -a -G students user_4
+    
+    5. Создать пользователя mentor3, задав ему при создании uid=3000, добавить в группу teachers
+    
+ sudo useradd -u 3000 mentor3
+ sudo usermod -a -G teachers mentor3
 
 
     
-    3.Пользователей user_1 и user_2 добавить в группу workers
-    4.Пользователей user_3, user_4, user_5 добавить в группу students
-    5. Создать пользователя mentor3, задав ему при создании uid=3000, добавить в группу teachers
     6.Вывести на экран состав групп workers; teachers; students
     7.Задать пароли для всех пользователей
     8.С помощью grep найти записи о новых группах и пользователях в файлах /etc/passwd и /etc/group

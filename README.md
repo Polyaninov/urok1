@@ -86,7 +86,18 @@
     pmn@pmn-ubuntu:~/user/library$ for i in {1..5}; do touch book_фамилия_$i; done
 
     
-    Создать текстовый файл test_permissions, и поместить в tests; добавить в него следующий текст
+    11. Создать текстовый файл test_permissions, и поместить в tests; добавить в него следующий текст
+    #!/bin/bash
+    echo "Hello World"
+
+    nano test_permissions
+    sudo chmod +x test_permissions
+
+    12. Сделать файл test_permissions исполняемым для группы students
+    
+    chown pmn:students test_permissions 
+    sudo chmod g+x test_permissions
+    
 
 
     

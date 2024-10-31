@@ -1,3 +1,4 @@
+Часть 1: Работа с текстом
     1. Вывести список имен пользователей из файла /etc/passwd
 
   awk -F : ' {print $1}' /etc/passwd
@@ -18,4 +19,10 @@
     7. В файле syslog найти все записи, содержащие "Failed password" и вывести только ip
     8. В файле syslog найти записи, содержащие "Accepted password" и вывести имя пользователя и ip
     9. В директории text_proxessing создать файл logs.log с содержимым
+
+     touch logs.log
+     pmn@pmn-ubuntu:~/text_processing$ nano logs.log 
+
+     Часть 2: Пользователи и права доступа
+
 

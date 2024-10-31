@@ -57,6 +57,15 @@
     
     6.Вывести на экран состав групп workers; teachers; students
     7.Задать пароли для всех пользователей
+
+     sudo passwd user_1   1234567
+      sudo passwd user_2
+       sudo passwd user_3
+        sudo passwd user_4
+         sudo passwd user_5
+         sudo passwd mentor3
+
+     
     8.С помощью grep найти записи о новых группах и пользователях в файлах /etc/passwd и /etc/group
     9.Создать директорию user в домашней директории. В ней создать каталоги library и tests.
     10.Создать файлы book_фамилия_{1,2,3,4,5} и поместить их в library

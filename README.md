@@ -100,9 +100,17 @@
     sudo chmod g+x test_permissions
 
 
-    13. Переключиться на пользователя user_3 и запустить файл test_permissions
+    13. Переключиться на пользователя user_3 и запустить файл test_permissions??????
         sudo su user_3
-     
+
+
+    14.  Дать право на изменение файла test_permissions только пользователю mentor3, а на чтение пользователям группы workers; проверить что это действительно сработало, переключаясь на пользователей
+
+    sudo chown mentor3:workers test_permissions
+    sudo chmod o=w test_permissions 
+    sudo chmod u-r test_permissions
+
+    
     
 
 

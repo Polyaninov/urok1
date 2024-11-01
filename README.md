@@ -125,9 +125,21 @@ $ ls -l
 total 4
 --w---x-w- 1 mentor3 workers 31 окт 31 23:39 test_permissions
 
+15. Создать пользователя test1, для которого запрещен вход в сеанс, имеющего домашний каталог /home/nouser и являющегося членом групп user и mail. Пользователь должен иметь UID равный 2000
 
+
+
+
+
+    Часть 3: Простая установка ПО
     
-    
+    1 Установить на ВМ nginx, php, php-fpm, php-mysql и mariadb-server
+     sudo apt install nginx
+    2. Удалить apache2
+       sudo apt remove apache2
+    3. Добавить установленные пакеты в автозагрузку
+       sudo ~/.config/autostart/apache2.desktop
+       
 
 
     

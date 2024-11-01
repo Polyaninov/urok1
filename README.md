@@ -58,7 +58,13 @@
 
 
     
-    6.Вывести на экран состав групп workers; teachers; students?????
+    6.Вывести на экран состав групп workers; teachers; students
+
+    cat /etc/group | grep  teachers
+    cat /etc/group | grep  workers
+    cat /etc/group | grep  students
+
+
     
     
     7.Задать пароли для всех пользователей

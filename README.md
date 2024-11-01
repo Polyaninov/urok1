@@ -98,6 +98,11 @@
     
     chown pmn:students test_permissions 
     sudo chmod g+x test_permissions
+
+
+    13. Переключиться на пользователя user_3 и запустить файл test_permissions
+        sudo su user_3
+     
     
 
 

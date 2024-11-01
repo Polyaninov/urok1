@@ -53,7 +53,7 @@
     
     5. Создать пользователя mentor3, задав ему при создании uid=3000, добавить в группу teachers
     
- sudo useradd -u 3000 mentor3
+ sudo useradd -u 3000 
  sudo usermod -a -G teachers mentor3
 
 
@@ -127,7 +127,7 @@ total 4
 
 15. Создать пользователя test1, для которого запрещен вход в сеанс, имеющего домашний каталог /home/nouser и являющегося членом групп user и mail. Пользователь должен иметь UID равный 2000
 
-
+sudo adduser test1 --disabled-login --disabled-password --home-dir /home/nouser --gid user,mail --uid 2000
 
 
 

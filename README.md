@@ -110,6 +110,22 @@
     sudo chmod o=w test_permissions 
     sudo chmod u-r test_permissions
 
+    sudo su mentor3
+$ ls -l 
+total 4
+--w---x-w- 1 mentor3 workers 31 окт 31 23:39 test_permissions
+
+ sudo su user_1
+$ ls -l 
+total 4
+--w---x-w- 1 mentor3 workers 31 окт 31 23:39 test_permissions
+
+sudo su user_2
+$ ls -l 
+total 4
+--w---x-w- 1 mentor3 workers 31 окт 31 23:39 test_permissions
+
+
     
     
 

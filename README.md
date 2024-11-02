@@ -143,7 +143,10 @@ total 4
 sudo adduser test1 --disabled-login --disabled-password --home-dir /home/nouser --gid user,mail --uid 2000
 
 
-
+  16  Изменить имя пользователя test1 на test123.
+  17. Заблокировать пользователя test123
+  18. Создать группу пользователей xusers с GID, равным 1010
+  19 Изменить имя группы на yusers, а GID на 202
 
 
     Часть 3: Простая установка ПО

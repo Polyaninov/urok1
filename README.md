@@ -15,6 +15,9 @@
 
     
     4.В файле syslog найти все записи, которые содержат application
+
+    cat /home/pmn/text_processing/syslog | grep application
+    
     5. В файле syslog найти записи о запусках cron на сервере server3 и вывести команду, которая запускалась (это то, что в скобках в конце)
     6. В файле syslog найти все записи, содержащие ssh и вывести для них название сервера
     7. В файле syslog найти все записи, содержащие "Failed password" и вывести только ip
@@ -24,6 +27,9 @@
      touch logs.log
      nano logs.log 
 
+     
+     
+     
      Часть 2: Пользователи и права доступа
      
     1.Создать группы: workers; teachers; students; вывести из файла /etc/group только названия добавленных групп
@@ -36,8 +42,9 @@
   sudo useradd user_2
   sudo useradd user_3
   sudo useradd user_4
-  sudo useradd user_4
-  
+  sudo useradd user_5
+
+  for i in {1..5}; do useradd user_$i; done
 
   
     
@@ -134,6 +141,8 @@ total 4
 15. Создать пользователя test1, для которого запрещен вход в сеанс, имеющего домашний каталог /home/nouser и являющегося членом групп user и mail. Пользователь должен иметь UID равный 2000
 
 sudo adduser test1 --disabled-login --disabled-password --home-dir /home/nouser --gid user,mail --uid 2000
+
+
 
 
 

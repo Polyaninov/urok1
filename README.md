@@ -160,8 +160,14 @@ sudo adduser test1 --disabled-login --disabled-password --home-dir /home/nouser 
        
 pmn@pmn-ubuntu:~$ grep -E "(workers|students|teachers)" /etc/group | awk -F : '{print $NF}' 
 
+pmn@pmn-ubuntu:~$ grep -E "(workers|students|teachers)" /etc/group
 
+    pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep -i cron | grep server3 | awk '{print $NF}'
     
+pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep -i cron 
+pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep ssh 
+
+
 
 
 

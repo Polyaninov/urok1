@@ -158,6 +158,7 @@ sudo adduser test1 --disabled-login --disabled-password --home-dir /home/nouser 
     3. Добавить установленные пакеты в автозагрузку
        sudo ~/.config/autostart/apache2.desktop
        
+pmn@pmn-ubuntu:~$ grep -E "(workers|students|teachers)" /etc/group | awk -F : '{print $NF}' 
 
 
     

@@ -19,7 +19,12 @@
     cat /home/pmn/text_processing/syslog | grep application
     
     5. В файле syslog найти записи о запусках cron на сервере server3 и вывести команду, которая запускалась (это то, что в скобках в конце)
+
+      pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep -i cron | grep server3 | awk '{print $NF}'
+    
     6. В файле syslog найти все записи, содержащие ssh и вывести для них название сервера
+
+    
     7. В файле syslog найти все записи, содержащие "Failed password" и вывести только ip
     8. В файле syslog найти записи, содержащие "Accepted password" и вывести имя пользователя и ip
     9. В директории text_proxessing создать файл logs.log с содержимым
@@ -162,7 +167,6 @@ pmn@pmn-ubuntu:~$ grep -E "(workers|students|teachers)" /etc/group | awk -F : '{
 
 pmn@pmn-ubuntu:~$ grep -E "(workers|students|teachers)" /etc/group
 
-    pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep -i cron | grep server3 | awk '{print $NF}'
     
 pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep -i cron 
 pmn@pmn-ubuntu:~$ cat /home/pmn/text_processing/syslog | grep ssh 

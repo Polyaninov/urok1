@@ -26,6 +26,9 @@
 
     
     7. В файле syslog найти все записи, содержащие "Failed password" и вывести только ip
+
+  pmn@pmn-ubuntu:~/text_processing$ grep -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' syslog 
+    
     8. В файле syslog найти записи, содержащие "Accepted password" и вывести имя пользователя и ip
     9. В директории text_proxessing создать файл logs.log с содержимым
 
